@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center; 
+    gap: 0px;
+    justify-content: space-between;
+  }
+
+  .grid-item {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+    image-align:margin-top;
+  }
+  .grid-item img{
+    max-width: 200px;
+    height: auto;
+    width: 500px;
+    height: 200px;
+  
+  }
+  .image-caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: blue;
+    padding:5px;
+    box-sizing: border-box;
+  }
+  .mutual-friends{
+    display: flex;
+    align-items: center;
+  }
+  
+  .button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  </style>
+</head>
+<body>
+  
+
+<div class="grid-container">
+  
+  <div class="grid-item"><img src="c:\Users\LENOVO T460\Desktop\cat.jpg"  ><br>Oliver</br>
+    <div class="mutual-friends">
+    <span class="mutual-friends-icon"></span>
+    <span>2 mutual friends</span> <br>
+  </div>
+    <button class="button" style="background-color: blue;">Add Friends</button></div>
+  <div class="grid-item"><img src="c:\Users\LENOVO T460\Desktop\dog2.jpg"><br>Mimi</br>
+    <div class="mutual-friends">
+      <span class="mutual-friends-icon"></span>
+    <span>3 mutual friends</span> <br>
+  </div>
+    <button class="button" style="background-color: blue;" >Add Friends</button>
+  </div>
+  
+  <div class="grid-item"><img src="c:\Users\LENOVO T460\Desktop\cat2.jpg"><br>Rex</br>
+    <div class="mutual-friends">
+      <span class="mutual-friends-icon"></span>
+    <span>4 mutual friends</span> <br>
+    </div>
+    <button class="button" style="background-color: blue;">Add Friends</button></div>
+  </div> 
+  <script>
+    function activateButton(){
+      alert("Button clicked!");
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Google Search Bar</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    width: 300px;
+}
+
+.search-button {
+    background-color: #4285f4;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #357ae8;
+}
+.search1-bar {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the search bar horizontally */
+}
+
+/* Style the search input */
+.search1-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px; /* Rounded left corners */
+}
+
+/* Style the search button */
+.search1-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded right corners */
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Change button style on hover */
+.search1-button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-3.93-3.5-7.06-7.43-7.53a7.006 7.006 0 0 0-8.75 8.74c.47 3.94 3.5 7.06 7.43 7.53a7.006 7.006 0 0 0 8.75-8.74c0-.34-.03-.68-.08-1.01l-.01-.07zm-2.91 1.74l-.87-.88a5.5 5.5 0 0 1-7.8-7.8l.88.88 7.8 7.8.88.88 2.83 2.83a1 1 0 0 1-1.41 1.41l-2.83-2.83zm-4.59-2.83a3.5 3.5 0 1 0-4.95-4.95 3.5 3.5 0 0 0 4.95 4.95z"/></svg>
+            </button>
+    </div><br>
+    <div class="search1-bar">
+        <input type="text" placeholder="Search">
+        <button class="search1-button">Search</button>
+    </div>      
+</body>
+</html>
